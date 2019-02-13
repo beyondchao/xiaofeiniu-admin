@@ -84,7 +84,7 @@ export default {
 <style lang="scss">
     .add-table {
         .el-form {
-            margin: 40px 0 0 0;
+            margin: 30px 0 0 0;
             .el-form-item {
                 .el-form-item__label {
                     max-width: 66px;

@@ -1,7 +1,7 @@
 <template>
-    <div class="dish" @mouseenter="enter" @mouseleave="leave">
-        <img :src="imgUrl" />
-        <h4 class="title" :style="color">{{dishDetail.title}}</h4>
+    <div class="dish" @mouseenter="enter" @mouseleave="leave" >
+        <img v-if="imgUrl" :src="imgUrl" />
+        <h4 class="title" :style="this.color">{{dishDetail.title}}</h4>
         <div class="mask" v-if="showMask" >
             <h4 class="text">{{dishDetail.detail}}</h4>
             <div class="price">{{dishDetail.price | currency}}</div>
@@ -13,10 +13,13 @@
 export default {
     data () {
         return {
-            imgUrl: require(`@/assets/img/dish/${this.dishDetail.imgUrl}`),
+            imgUrl: '',
             showMask: false,
             color: '#fff'
         }
+    },
+    created () {
+        this.imgUrl = require('@/assets/img/dish/'+this.dishDetail.imgUrl)
     },
     props: {
         dishDetail: {

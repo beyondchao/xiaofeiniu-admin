@@ -1,5 +1,10 @@
 <template>
     <div class="dish">
+        <el-breadcrumb separator-class="el-icon-arrow-right">
+            <el-breadcrumb-item :to="{ path: '/setting' }">首页</el-breadcrumb-item>
+            <el-breadcrumb-item>菜品管理</el-breadcrumb-item>
+            <el-breadcrumb-item>所有菜品</el-breadcrumb-item>
+        </el-breadcrumb>
         <el-tabs v-model="activeName" type="border-card">
             <el-tab-pane label="肉类" name="1">
                 <el-row v-if="dish[0]">
@@ -63,5 +68,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+.el-tabs {
+    margin-top: 20px;
+}
 </style>

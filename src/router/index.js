@@ -11,6 +11,9 @@ import Dish from '@/components/dish/Dish'
 import AddDish from '@/components/dish/AddDish'
 import DeleteDish from '@/components/dish/DeleteDish'
 import UpdateDish from '@/components/dish/UpdateDish'
+import DishCategory from '@/components/dish/DishCategory'
+import Order from '@/components/Order'
+import Security from '@/components/Security'
 
 Vue.use(Router)
 
@@ -26,7 +29,10 @@ export default new Router({
       {path: '/dish/dish', component: Dish},
       {path: '/dish/addDish', component: AddDish},
       {path: '/dish/deleteDish', component: DeleteDish},
-      {path: '/dish/updateDish', component: UpdateDish}
+      {path: '/dish/updateDish', component: UpdateDish},
+      {path: '/dishCategory', component: DishCategory},
+      {path: '/order', component: Order},
+      {path: '/security', component: Security}
     ]},
     { path: '*', component: NotFound}
   ]

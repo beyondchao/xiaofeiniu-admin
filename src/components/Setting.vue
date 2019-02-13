@@ -21,7 +21,7 @@
                 <el-input v-model="form.icp" readonly></el-input>
             </el-form-item>
             <el-form-item label="版权声明:">
-                <el-input v-model="form.copyright" readonly></el-input>
+                <el-input v-model="form.copyright"></el-input>
             </el-form-item>
             <el-form-item>
                 <el-button type="primary" @click="conserve">保存修改</el-button>

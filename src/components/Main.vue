@@ -24,7 +24,7 @@
                         <el-menu-item index="/table/add">添加桌台</el-menu-item>
                         <el-menu-item index="/table/delete"> 删除桌台</el-menu-item>
                     </el-submenu>
-                    <el-menu-item index="3">
+                    <el-menu-item index="/dishCategory">
                         <template slot="title">
                             <i class="iconfont">&#xe7de;</i>
                             <span>菜品类别</span>
@@ -40,13 +40,13 @@
                         <el-menu-item index="/dish/deleteDish">删除菜品</el-menu-item>
                         <el-menu-item index="/dish/updateDish">修改菜品</el-menu-item>
                     </el-submenu>
-                    <el-menu-item index="5">
+                    <el-menu-item index="/order">
                         <template slot="title">
                             <i class="iconfont">&#xe644;</i>
                             <span>订单列表</span>
                         </template>
                     </el-menu-item>
-                    <el-menu-item index="6">
+                    <el-menu-item index="/security">
                         <template slot="title">
                             <i class="iconfont">&#xe7c4;</i>
                             <span>安全管理</span>
@@ -56,8 +56,8 @@
             </el-aside>
             <el-container>
                 <!-- 顶部信息 -->
-                <el-header height="80px">
-                    <el-card>
+                <el-header height="70px">
+                    <el-card shadow="hover">
                         <div class="text">小肥牛后台管理系统</div>
                         <div class="user">
                             <span class="text">登录用户:</span>
