@@ -3,15 +3,15 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+require.context('../src/assets/img/dish', false, /\.jpg$/)
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
 
-
 module.exports = {
-  context: path.resolve(__dirname, '../'),
+  context: path.resolve('./src'),
   entry: {
     app: './src/main.js'
   },
